@@ -1,5 +1,7 @@
 # LoopSense MCP Server
 
+![LoopSense Demo](./demo.gif)
+
 LoopSense is an open-source MCP server that closes the feedback loop for AI coding agents — giving them real-time visibility into CI results, deployments, test outcomes, and file system changes.
 
 ## What it does

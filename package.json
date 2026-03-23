@@ -1,6 +1,6 @@
 {
   "name": "@loopsense/mcp",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "MCP server that closes the feedback loop for AI coding agents — CI results, deployments, test outcomes, file changes",
   "type": "module",
   "bin": {
