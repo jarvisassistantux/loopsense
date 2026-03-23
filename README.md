@@ -4,6 +4,8 @@
 
 LoopSense is an open-source MCP server that closes the feedback loop for AI coding agents — giving them real-time visibility into CI results, deployments, test outcomes, and file system changes.
 
+[![loopsense MCP server](https://glama.ai/mcp/servers/jarvisassistantux/loopsense/badges/card.svg)](https://glama.ai/mcp/servers/jarvisassistantux/loopsense)
+
 ## What it does
 
 When an AI agent pushes code, runs tests, or triggers a deployment, LoopSense watches the downstream effects and surfaces them back to the agent. No more blind actions.
