@@ -1,16 +1,15 @@
 {
   "name": "@loopsense/mcp",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "MCP server that closes the feedback loop for AI coding agents — CI results, deployments, test outcomes, file changes",
   "type": "module",
   "bin": {
-    "loopsense": "./cli",
-    "mcp": "./cli"
+    "loopsense": "./dist/index.js",
+    "mcp": "./dist/index.js"
   },
   "main": "./dist/index.js",
   "files": [
-    "dist",
-    "cli"
+    "dist"
   ],
   "scripts": {
     "build": "tsup",
@@ -50,7 +49,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jarvisassistantux/loopsense.git"
+    "url": "git+https://github.com/jarvisassistantux/loopsense.git"
   },
   "publishConfig": {
     "access": "public"
