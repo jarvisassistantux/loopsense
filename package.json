@@ -1,0 +1,57 @@
+{
+  "name": "@loopsense/mcp",
+  "version": "0.1.1",
+  "description": "MCP server that closes the feedback loop for AI coding agents — CI results, deployments, test outcomes, file changes",
+  "type": "module",
+  "bin": {
+    "loopsense": "./bin.js"
+  },
+  "main": "./dist/index.js",
+  "files": [
+    "dist",
+    "bin.js"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsx src/index.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "prepublishOnly": "npm run build && npm run typecheck"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.11.4",
+    "@octokit/rest": "^21.0.2",
+    "better-sqlite3": "^12.8.0",
+    "chokidar": "^3.6.0",
+    "uuid": "^10.0.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/node": "^22.0.0",
+    "@types/uuid": "^10.0.0",
+    "dotenv": "^16.4.5",
+    "tsup": "^8.0.2",
+    "tsx": "^4.7.3",
+    "typescript": "^5.4.5",
+    "vitest": "^1.5.0"
+  },
+  "keywords": [
+    "mcp",
+    "ci",
+    "github-actions",
+    "agent",
+    "feedback-loop"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jarvisassistantux/loopsense.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
